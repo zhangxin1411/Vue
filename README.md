@@ -1,2 +1,2 @@
 # Vue
-vue demo for study
+vue demo for study ！！
