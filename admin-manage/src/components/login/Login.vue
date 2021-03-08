@@ -61,6 +61,7 @@ export default {
         const {data: result} = await this.$http.post('login', this.LoginForm)
         if (result.success) {
           this.$message.success('登录成功！')
+          window.sessionStorage.setItem('token', result.code)
           this.$router.push('/home')
         } else {
           this.$message.error('用户名或密码错误！')
